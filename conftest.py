@@ -3,8 +3,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-# pytest -s -v --browser_name=chrome test_parser.py
-# pytest -s -v --browser_name=firefox test_parser.py
+# pytest -s -v --browser_name=chrome test_main_page.py
+# pytest -s -v --browser_name=firefox test_main_page.py
 
 
 
