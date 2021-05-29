@@ -22,13 +22,20 @@ def test_login_form(browser):
     page.should_be_login_form
 
 def test_should_be_login_url(browser):
-    url1 = MainPageLocators.LOGIN_LINK
-    url2 = LoginPageLocators.CURRENT_URL
-    assert (url1, url2), "Login link is not found"
+    link = 'http://selenium1py.pythonanywhere.com/ru/accounts/login/'
+    page = LoginPage(browser, link)
+    page.open()
+    page.should_be_login_url()
 
 def test_register_form(browser):
-    link = "http://selenium1py.pythonanywhere.com/"
+    link = 'http://selenium1py.pythonanywhere.com/ru/accounts/login/'
     page = LoginPage(browser, link)
     page.open()
     page.should_be_register_form
-    assert (LoginPage.should_be_register_form, page.should_be_register_form ), "Register form not found"
+
+def test_should_be_login_page(browser):
+    link = "http://selenium1py.pythonanywhere.com/"
+    page = LoginPage(browser, link)
+    page.open()
+    page.should_be_login_page
+
