@@ -11,6 +11,11 @@ class ProductPage(BasePage):
         add_basket.click()
         time.sleep(3)
 
+    def name_book(self):
+        name = self.browser.find_element(*ProductPageLocators.NAME_BOOK)
+        print(name)
+
+
 
 
 
