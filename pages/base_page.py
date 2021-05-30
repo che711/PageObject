@@ -1,5 +1,7 @@
+from imghdr import what
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
+from selenium.webdriver.common.by import By
 import math
 
 class BasePage():
@@ -11,6 +13,9 @@ class BasePage():
 
     def open(self):
         self.browser.get(self.url)
+
+    def fird_and_click_button(self):
+        self.browser.find_element(By.CSS_SELECTOR, what)
 
 
     def is_element_present(self, how, what):

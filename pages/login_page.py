@@ -8,7 +8,7 @@ class LoginPage(BasePage):
         self.should_be_login_form()
         self.should_be_register_form()
 
-    def should_be_login_url(self,):
+    def should_be_login_url(self):
         assert (self.url in self.browser.current_url), "Login is not found in current url"
 
     def should_be_login_form(self):
