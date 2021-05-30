@@ -12,4 +12,4 @@ class LoginPageLocators():
     REGISTER_FORM = (By.CSS_SELECTOR, '#register_form')
 
 class ProductPageLocators():
-    pass
+    BUTTON_BASKET = (By.CSS_SELECTOR, "button.btn-lg:nth-child(3)")
