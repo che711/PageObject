@@ -7,13 +7,21 @@ import time
 class ProductPage(BasePage):
 
     def push_add_to_basket(self):
-        add_basket = self.browser.find_element(By.CSS_SELECTOR, 'button.btn-lg:nth-child(3)')
+        add_basket = self.browser.find_element(*ProductPageLocators.BUTTON_BASKET)
         add_basket.click()
-        time.sleep(3)
+        promt = BasePage(self.browser, self.url)
+        promt.solve_quiz_and_get_code()
+
 
     def name_book(self):
         name = self.browser.find_element(*ProductPageLocators.NAME_BOOK)
-        print(name)
+        book = name.text
+        print(f"\n\tКнига называется: {book}")
+
+    def add_names_book(self):
+        name2 = self.browser.find_element(*ProductPageLocators.ADD_NAME_BOOK)
+        book = name2.text
+        print(f"\n\tКнига называется: {book}")
 
 
 

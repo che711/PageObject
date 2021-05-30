@@ -4,21 +4,25 @@ import time
 from selenium import webdriver
 from .pages.locators import ProductPageLocators
 from selenium.webdriver.common.by import By
-import math
 
 
-def test_push_add_to_basket(browser):
+
+def test_guest_can_add_product_to_basket(browser):
     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
     page = ProductPage(browser, link)
     page.open()
-    time.sleep(2)
-    basket = browser.find_element(*ProductPageLocators.BUTTON_BASKET)
-    basket.click()
-    print("\nНажата кнопка 'Add to basket'")
+    page.push_add_to_basket()
+    time.sleep(10)
 
-    promt = BasePage(browser, link)
-    promt.solve_quiz_and_get_code()
-    time.sleep(3)
-    browser.quit()
+# def test_name_book(browser):
+#     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
+#     page = ProductPage(browser, link)
+#     page.open()
+#     page.name_book()
 
-
+def test_add_name_book(browser):
+    link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
+    page = ProductPage(browser, link)
+    page.open()
+    page.add_names_book
+    time.sleep(5)

@@ -14,3 +14,4 @@ class LoginPageLocators():
 class ProductPageLocators():
     BUTTON_BASKET = (By.CSS_SELECTOR, "button.btn-lg:nth-child(3)")
     NAME_BOOK = (By.CSS_SELECTOR, "div.col-sm-6:nth-child(2) > h1:nth-child(1)")
+    ADD_NAME_BOOK = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
