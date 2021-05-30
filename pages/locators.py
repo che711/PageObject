@@ -14,4 +14,6 @@ class LoginPageLocators():
 class ProductPageLocators():
     BUTTON_BASKET = (By.CSS_SELECTOR, "button.btn-lg:nth-child(3)")
     NAME_BOOK = (By.CSS_SELECTOR, "div.col-sm-6:nth-child(2) > h1:nth-child(1)")
-    ADD_NAME_BOOK = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
+    ADD_NAME_BOOK = (By.CSS_SELECTOR, "#content_inner > article > div.row > div.col-sm-6.product_main > h1")
+    PRICE_BOOK = (By.CSS_SELECTOR, 'p.price_color:nth-child(2)')
+    ADD_PRICE_BOOK = (By.CSS_SELECTOR, '#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong')
