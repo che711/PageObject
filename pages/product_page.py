@@ -17,25 +17,25 @@ class ProductPage(BasePage):
         '''Находим название книги'''
         name = self.browser.find_element(*ProductPageLocators.NAME_BOOK)
         book = name.text
-        print(f"\n\tКнига называется: {book}")
+        print(f"\n\tThe book`s name: {book}")
 
     def add_names_book(self):
         '''Находим называние, добавленной в корзину книги'''
         name2 = self.browser.find_element(*ProductPageLocators.ADD_NAME_BOOK)
         book2 = name2.text
-        print(f"\n\tКнига, добавленная в корзину, называется: {book2}")
+        print(f"\n\tBook in basket: {book2}")
 
     def price_book(self):
         '''Находим цену книги'''
         css_price =  self.browser.find_element(*ProductPageLocators.PRICE_BOOK)
         price = css_price.text
-        print(f"\n\tЦена: {price}")
+        print(f"\n\tThe book`s price: {price}")
 
     def add_price_book(self):
         '''Находим цену книги, добавленной в корзину'''
         css_price = self.browser.find_element(*ProductPageLocators.ADD_PRICE_BOOK)
         price = css_price.text
-        print(f"\n\tЦена, добавленной книги: {price}")
+        print(f"\n\tThe basket`s price: {price}")
 
 
 
