@@ -17,3 +17,4 @@ class ProductPageLocators():
     ADD_NAME_BOOK = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
     PRICE_BOOK = (By.CSS_SELECTOR, 'p.price_color:nth-child(2)')
     ADD_PRICE_BOOK = (By.CSS_SELECTOR, '#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong')
+    SUCCESS_MESSAGE = (By.XPATH, '//*[@id="content_inner"]/article/div[1]/div[2]/h1')
