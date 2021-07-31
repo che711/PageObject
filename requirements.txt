@@ -1,16 +1,6 @@
-﻿blinker==1.4
-certifi==2019.11.28
-chrome-gnome-shell==0.0.0
-Click==7.0
-colorama==0.4.3
-command-not-found==0.3
-cycler==0.10.0
-dbus-python==1.2.16
-decorator==4.4.2
-distro-info===0.23ubuntu1
-python-debian===0.1.36ubuntu1
-python-gnupg==0.4.5
+﻿pytests
 requests==2.22.0
 selenium==3.141.0
-
+allure-pytest
+chromedriver
 
