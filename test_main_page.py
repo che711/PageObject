@@ -1,5 +1,5 @@
-from .pages.main_page import MainPage
-from .pages.login_page import LoginPage
+from pages.main_page import MainPage
+from pages.login_page import LoginPage
 
 # pytest -s -vv --alluredir=results test_main_page.py
 

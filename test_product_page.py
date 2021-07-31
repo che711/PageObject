@@ -1,7 +1,7 @@
-from .pages.product_page import ProductPage
+from pages.product_page import ProductPage
 import pytest
 import time
-from .pages.locators import ProductPageLocators
+from pages.locators import ProductPageLocators
 
 # pytest -s -vv --alluredir=results test_product_page.py
 
