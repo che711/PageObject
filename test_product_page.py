@@ -5,7 +5,6 @@ from .pages.locators import ProductPageLocators
 
 # pytest -s -vv --alluredir=results test_product_page.py
 
-
 def test_add(browser):
     """Add book to basket"""
     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
