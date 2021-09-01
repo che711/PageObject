@@ -1,4 +1,3 @@
 # PageObject
 
-My repositoty
-Well done!
+The final project from Stepik
