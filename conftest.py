@@ -14,7 +14,7 @@ def browser(request):
 
     chromedriver_path = './chromedriver'
     options = Options()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     options.add_argument("--window-size=1920,1080")
     options.add_argument('--no-sandbox')
 
