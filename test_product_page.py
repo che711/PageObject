@@ -10,12 +10,14 @@ def test_add(browser):
     page = ProductPage(browser, link)
     page.open()
     page.push_add_to_basket()
+
 def test_name_book(browser):
     '''Return book`s name.'''
     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
     page = ProductPage(browser, link)
     page.open()
     page.name_book()
+
 def test_add_names_book(browser):
     '''Проверка имени книги, которую добавили в корзину'''
     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
@@ -29,12 +31,14 @@ def test_add_names_book(browser):
     add_name2 = ProductPage(browser,link)
     add_name2.add_names_book()
     time.sleep(5)
+
 def test_price_book(browser):
     '''Return book`s price'''
     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
     page = ProductPage(browser, link)
     page.open()
     page.price_book()
+
 def test_add_price_book(browser):
     '''Находим цену книги, добавленной в корзину'''
     link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear'
@@ -43,6 +47,7 @@ def test_add_price_book(browser):
     page.push_add_to_basket()
     time.sleep(2)
     page.add_price_book()
+
 def test_old_guest_can_add_product_to_basket(browser):
     '''Проверка цены и книги в корзине'''
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"
@@ -99,4 +104,3 @@ def test_guest_can_add_product_to_basket(browser, link):
     price2 = css_price2.text
     assert (price1 == price2), "Цены разные"
     assert (book1 == book2), "Книги разные"
-
