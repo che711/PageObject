@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 import math
 
 class BasePage():
-
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
@@ -16,7 +15,6 @@ class BasePage():
 
     def fird_and_click_button(self):
         self.browser.find_element(By.CSS_SELECTOR, what)
-
 
     def is_element_present(self, how, what):
         try:
@@ -38,8 +36,3 @@ class BasePage():
             alert.accept()
         except NoAlertPresentException:
             print("No second alert presented")
-
-
-
-
-
