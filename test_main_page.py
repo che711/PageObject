@@ -2,6 +2,7 @@ from pages.main_page import MainPage
 from pages.login_page import LoginPage
 
 # pytest -s -vv --alluredir=results test_main_page.py
+# . pg/bin/activate
 
 
 def test_guest_can_go_to_login_page(browser):
