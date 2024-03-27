@@ -4,7 +4,6 @@ from pages.login_page import LoginPage
 # pytest -s -vv --alluredir=results test_main_page.py
 # . pg/bin/activate
 
-
 def test_guest_can_go_to_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com/"
     page = MainPage(browser, link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
