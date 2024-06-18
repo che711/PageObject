@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
-    <option name="sdkName" value="$PROJECT_DIR$/../../pandas_graphs/u" />
+    <option name="sdkName" value="$USER_HOME$/pandas_graphs/u" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="$PROJECT_DIR$/../../pandas_graphs/u" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (PageObject)" project-jdk-type="Python SDK" />
 </project>
