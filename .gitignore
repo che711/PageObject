@@ -5,4 +5,4 @@ venv/
 /.pytest_cache/
 
 #pycharm's files
-.idea
+.idea/
