@@ -1,2 +1,8 @@
-/venv/
+# environments
+venv/
+
+#cashe
 /.pytest_cache/
+
+#pycharm's files
+.idea
