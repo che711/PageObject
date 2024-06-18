@@ -2,7 +2,7 @@
 venv/
 
 #cashe
-/.pytest_cache/
+.pytest_cache/
 
 #pycharm's files
 .idea/
