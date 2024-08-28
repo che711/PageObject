@@ -42,3 +42,4 @@ def test_register_form(browser):
 #     page.open()
 #     page.should_be_login_page()
 
+
